@@ -8,8 +8,8 @@ public class DataEvento {
 
         DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-        System.out.println(dataEvento.format(formato));
-        System.out.println(dataAtual.format(formato));
+        System.out.println("Data do evento: " + dataEvento.format(formato));
+        System.out.println("Data atual: " +dataAtual.format(formato));
 
         if(dataEvento.isBefore(dataAtual)){
             System.out.println("O evento já ocorreu");
